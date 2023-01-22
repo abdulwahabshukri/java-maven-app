@@ -1,4 +1,5 @@
-FROM openjdk:8
-ADD C:\Users\wahab\Documents\GitHub\maven-docker-project.jar maven-docker-project.jar
+FROM openjdk:
+WORKDIR  C:\Users\wahab\Documents\GitHub\java-maven-app
+ADD C:\Users\wahab\Documents\GitHub\java-maven-app\ maven-docker-project.jar
 ENTRYPOINT ["java", "-jar","maven-docker-project.jar"]
 EXPOSE 8080
