@@ -11,5 +11,7 @@ pipeline {
             steps {
                 echo 'Die Anwendung wird getestet'
                 sh "mvn test"
+            }
+        }    
     }
 }
